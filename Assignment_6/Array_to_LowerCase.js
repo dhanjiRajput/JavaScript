@@ -1,11 +1,18 @@
-let arr=["RED","AND","WHITE"];
+let arr=["RED","AND","WHITE","INSTITUTE"];
 
 let n=arr.length;
 
-arr[1]=arr[1].toLowerCase();
-
-for(let i=0;i<n;i++)
-{
-    console.log(arr[i]);
+const convert=(arr)=>{
+    for(let i=0;i<arr.length;i++)
+    {
+        if(i%2==0)
+        {
+            console.log(arr[i].toUpperCase());
+        }
+        else{
+            console.log(arr[i].toLowerCase());
+        }
+    }
 }
 
+convert(arr);
