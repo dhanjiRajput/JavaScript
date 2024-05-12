@@ -4,7 +4,6 @@ data.map((item) => {
     let image = document.createElement("img");
     image.src = item.image;
 
-
     let price = document.createElement("p");
     price.innerHTML = item.price;
 
