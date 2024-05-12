@@ -1,0 +1,56 @@
+#cart div img{
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.8s;
+}
+
+#cart div img:hover{
+    transform: scale(1.2);
+}
+
+#cart{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+#div_img{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#cart div button{
+    height: 30px;
+    width: 100px;
+    border-radius: 0px 5px 0px 5px;
+    border: none;
+    background-color: cadetblue;
+    font-weight: bold;
+    transition-duration: 00.8s;
+    cursor: pointer;
+}
+
+#cart div button:hover{
+    background-color: cornflowerblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#text_box{
+    height: 120px;
+    
+}
+
+.box{
+    transition-duration: 0.5s;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 0px 15px 0px 15px;
+    text-align: center;
+}
+
+.box:hover{
+    border-width: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
