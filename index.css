@@ -1,0 +1,11 @@
+span{
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+}
+
+a{
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}

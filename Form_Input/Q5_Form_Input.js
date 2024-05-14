@@ -1,6 +1,8 @@
 let students=[];
+
 //Function for show Value In UI
 const uimaker=()=>{
+
     document.getElementById("student_list").innerHTML="";
 
     students.map((item)=>{
@@ -14,8 +16,10 @@ const uimaker=()=>{
         email.innerHTML=item.email;
 
         document.getElementById("student_list").append(name,grid,email);
+        
     })
 };
+
 // Main Function To fetch Value from Input Tag
 const HandleData=(e)=>{
     e.preventDefault();
