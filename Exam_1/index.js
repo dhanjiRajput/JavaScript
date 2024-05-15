@@ -1,9 +1,10 @@
 let push_data=[];
 
-const deleteone=()=>{
+const deleteone=(index)=>{
     push_data.splice(index,1);
     uimaker();
 }
+
 const uimaker=()=>{
     document.getElementById("tbody").innerHTML="";
 
@@ -28,6 +29,7 @@ const uimaker=()=>{
         td6.innerHTML=item.exp;
 
         let td7=document.createElement("td");
+
         if(item.exp > 5){
             td7.innerHTML="senior";
         }
@@ -52,6 +54,8 @@ const uimaker=()=>{
         btn2.addEventListener("click",()=>deleteone(index));
 
     });
+
+    
 }
 
 const handledata=(e)=>{
@@ -68,12 +72,11 @@ const handledata=(e)=>{
 
     push_data.push(get_data);
     uimaker();
-
 }
 
 document.getElementById("input_data").addEventListener("submit",handledata);
+
 document.getElementById("btn1").addEventListener("click",()=>{
     document.getElementById("tbody").innerHTML="";
     push_data=[];
 });
-

@@ -18,11 +18,11 @@
             <form id="input_data">
                 <div class="mb-3">
                     <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
-                        placeholder="Employee Name">
+                        placeholder="Employee Name" required>
                 </div>
 
                 <div class="mb-3">
-                    <select class="form-select" id="job">
+                    <select class="form-select" id="job" required>
                         <option>Select Job Role</option>
                         <option>SDE-2</option>
                         <option>SDE-1</option>
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <select class="form-select" id="depart">
+                    <select class="form-select" id="depart" required>
                         <option>Select Departmentt</option>
                         <option>Engineering</option>
                         <option>Engineering</option>
@@ -42,21 +42,21 @@
 
                 <div class="mb-3">
                     <input type="number" class="form-control" id="salary" aria-describedby="emailHelp"
-                        placeholder="Monthly Salary">
+                        placeholder="Monthly Salary" required>
                 </div>
                 
                 <div class="mb-3">
                     <input type="number" class="form-control" id="exp" aria-describedby="emailHelp"
-                        placeholder="Prev Work Experience in Years">
+                        placeholder="Prev Work Experience in Years" required>
                 </div>
 
                 <div class="mb-3">
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                        placeholder="Contact Email">
+                        placeholder="Contact Email" required>
                 </div>
 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn">Hire</button>
+                    <button type="submit" class="btn btn-primary btn" id="btn_count">Hire</button>
                 </div>
             </form>
         </div>
@@ -81,7 +81,7 @@
         </div>
     </div>
 
-    <div class="mt-5 border">
+    <div class="mt-5 border" id="count">
         
     </div>
 </body>
