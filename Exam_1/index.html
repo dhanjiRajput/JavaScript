@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="d-flex">
+        
+        <div class="w-25 border p-3 mt-5 mx-3">
+            <h4 class="text-center">Hire a new Employee</h4>
+            <form id="input_data">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                        placeholder="Employee Name">
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" id="job">
+                        <option>Select Job Role</option>
+                        <option>SDE-2</option>
+                        <option>SDE-1</option>
+                        <option>HR Manager</option>
+                        <option>Ui/Ux Designer</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <select class="form-select" id="depart">
+                        <option>Select Departmentt</option>
+                        <option>Engineering</option>
+                        <option>Engineering</option>
+                        <option>HR Department</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="salary" aria-describedby="emailHelp"
+                        placeholder="Monthly Salary">
+                </div>
+                
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="exp" aria-describedby="emailHelp"
+                        placeholder="Prev Work Experience in Years">
+                </div>
+
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Contact Email">
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn">Hire</button>
+                </div>
+            </form>
+        </div>
+        <div class="w-75 border p-3 mt-5 mx-3">
+            <table class="table table-hover table-success table-striped-columns">
+                <thead>
+                    <tr class="text-center">
+                       <th>Employee Name</th> 
+                       <th>Job Role</th>
+                       <th>Department</th>
+                       <th>Salary</th>
+                       <th>Contact Email</th>
+                       <th>Work Experience</th>
+                       <th>Role Type</th>
+                       <th><button id="btn1" class="btnn">Fire Employee</button></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="mt-5 border">
+        
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
