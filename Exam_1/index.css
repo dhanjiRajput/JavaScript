@@ -1,13 +1,13 @@
-.btn{
+.btn {
     width: 150px;
     font-weight: bolder;
 }
 
-#td8{
+#td8 {
     text-align: center
 }
 
-.btnn{
+.btnn {
     background-color: cadetblue;
     color: white;
     transition-duration: 0.5s;
@@ -18,7 +18,41 @@
     padding: 5px;
 }
 
-.btnn:hover{
+.btnn:hover {
     background-color: blue;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#div_main {
+    height: 500px;
+}
+
+input:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+select:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.count {
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.count:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.table {
+    border-radius: 10px;
+}
+
+#table_div {
+    overflow: scroll;
+}
+
+h3:hover {
+    color: brown;
+    text-decoration: underline;
 }
