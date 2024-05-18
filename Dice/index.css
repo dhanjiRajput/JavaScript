@@ -1,0 +1,56 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_div {
+    margin: 20px;
+    width: 50%;
+}
+
+.roll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#dice_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+#btn_div{
+    background-color: darkturquoise;
+    transition-duration: 0.5s;
+}
+
+#btn_div:hover{
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#btn_roll {
+    padding: 10px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: darkgray;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#btn_roll:hover{
+    background-color: rgb(204, 144, 144);
+    color: white;
+    border-radius: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+hr{
+    width: 90%;
+}
