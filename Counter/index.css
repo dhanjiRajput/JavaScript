@@ -1,0 +1,44 @@
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-style: solid;
+}
+
+#main_div{
+    width: 350px;
+    height: 200px;
+}
+
+#middle_div{
+    height: 240px;
+    width: 390px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#day{
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#time{
+    height: 80px;
+}
+
+#date{
+    height: 60px;
+}
+
+.dt{
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
