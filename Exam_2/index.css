@@ -1,0 +1,68 @@
+#box{
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cart_img{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+#cart{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    align-self: center;
+    padding: 10px;
+}
+
+@media(max-width:768px){
+    #cart{
+       grid-template-columns: repeat(1,1fr); 
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    #cart{
+       grid-template-columns: repeat(3,1fr); 
+    }
+}
+
+.input1{
+    width: 20%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input1:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#btn1{
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+#btn2{
+    margin-left: 5px;
+}
+
+.bt{
+    background-color: cadetblue;
+    border-radius: 5px;
+    border-style: none;
+    transition-duration: 0.5s;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.bt:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
