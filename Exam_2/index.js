@@ -67,8 +67,19 @@ const handledata=(e)=>{
 }
 
 document.getElementById("data").addEventListener("submit",handledata);
+let min=29;
+let sec=59;
 
-setInterval(()=>{
-    let date=new Date();
-
-});
+let id=setInterval(()=>{
+    document.getElementById("timer").innerHTML=` Sale End In - ${min} : ${sec}`;
+    sec=sec-1;
+    if(min==0 && sec==0){
+        document.getElementById("timer").innerHTML=`Sale End In - ${min} : ${sec}`;
+        clearInterval(id);
+        document.getElementById("cart").innerHTML=`<h1>Sale Over</h1>`;
+    }
+    if(sec==0){
+        min=min-1;
+        sec=59;
+    }
+},1000);
