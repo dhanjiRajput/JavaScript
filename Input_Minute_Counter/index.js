@@ -25,6 +25,7 @@ const timer = (min) => {
             hour1 += 1;
             min1 = 0;
         }
+        
         if (sec == 59) {
             min1 += 1;
             sec = 0;
@@ -34,7 +35,7 @@ const timer = (min) => {
 
 const handle = (e) => {
     e.preventDefault();
-    let min = document.getElementById("minute").value
+    let min = document.getElementById("minute").value;
     timer(min);
 };
 
