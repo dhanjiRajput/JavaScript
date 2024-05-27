@@ -27,7 +27,7 @@
             transition-duration: 0.5s;
         }
 
-        .input:hover{
+        .input:hover {
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
 
@@ -45,7 +45,7 @@
             transition-duration: 0.5s;
         }
 
-        #btn:hover{
+        #btn:hover {
             background-color: rgb(94, 94, 94);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
             border-radius: 0px 10px 0px 10px;
@@ -82,9 +82,11 @@
             <span id="name_msg"></span><br><br>
             <input type="number" id="number" class="input" required placeholder="Enter Mobile Number" /><br>
             <span id="number_msg"></span><br>
-            <span>Minimum eight and maximum 16 characters, <br>at least one uppercase letter,<br> one lowercase letter, one
+            <span>Minimum eight and maximum 16 characters, <br>at least one uppercase letter,<br> one lowercase letter,
+                one
                 number and <br>one special character:</span><br>
-            <input type="password" id="password" class="input" required placeholder="Enter Password" /><br>
+            <input type="password" id="password" class="input" required placeholder="Enter Password"
+                style="-webkit-text-security: square;" /><br>
             <span id="password_msg"></span><br><br>
             <input type="submit" id="btn" />
         </form>
