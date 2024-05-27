@@ -10,7 +10,7 @@ const handlevalidation=(isvalid,id,idx,emsg,umsg)=>{
     }else{
         document.getElementById(idx).innerHTML=emsg
         document.getElementById(id).style.border="2px solid red";
-        window.navigator.vibrate([1000,500,2000]);
+        window.navigator.vibrate(1000);
         input.classList.add('error');
     }
 }
