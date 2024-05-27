@@ -17,17 +17,38 @@
         #data {
             border-style: groove;
             padding: 20px;
+            border-radius: 8px;
         }
 
         .input {
             width: 300px;
             height: 30px;
+            border-radius: 5px;
+            transition-duration: 0.5s;
+        }
+
+        .input:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
 
         #btn {
             padding: 5px;
-            width: 100px;
+            width: 120px;
             cursor: pointer;
+            border-radius: 8px;
+            font-size: 20px;
+            border-style: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            margin-left: 30%;
+            transition-duration: 0.5s;
+        }
+
+        #btn:hover{
+            background-color: rgb(94, 94, 94);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            border-radius: 0px 10px 0px 10px;
         }
 
         .error {
@@ -57,10 +78,14 @@
 <body>
     <div id="main">
         <form id="data">
-            <input type="text" id="name" class="input" required /><br>
+            <input type="text" id="name" class="input" required placeholder="Enter User Name" /><br>
             <span id="name_msg"></span><br><br>
-            <input type="number" id="number" class="input" required /><br>
-            <span id="number_msg"></span><br><br>
+            <input type="number" id="number" class="input" required placeholder="Enter Mobile Number" /><br>
+            <span id="number_msg"></span><br>
+            <span>Minimum eight and maximum 16 characters, <br>at least one uppercase letter,<br> one lowercase letter, one
+                number and <br>one special character:</span><br>
+            <input type="password" id="password" class="input" required placeholder="Enter Password" /><br>
+            <span id="password_msg"></span><br><br>
             <input type="submit" id="btn" />
         </form>
     </div>
