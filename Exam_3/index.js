@@ -187,12 +187,12 @@ let questions = [
     "question": "What is the correct syntax for referring to an external script called 'script.js'?",
 
     "options": {
-      "A": "script name='script.js'>",
-      "B": "script src='script.js'>",
-      "C": "script href='script.js'>",
-      "D": "script ref='script.js'>"
+      "A": "script name='script.js'",
+      "B": "script src='script.js'",
+      "C": "script href='script.js'",
+      "D": "script ref='script.js'"
     },
-    "correct": "script src='script.js'>"
+    "correct": "script src='script.js'",
   },
 ];
 
@@ -356,5 +356,6 @@ const handledata = (e) => {
     }
   }
 }
+
 document.querySelector("#data").addEventListener("submit", handledata);
 document.getElementById("a_answer").innerHTML="";
