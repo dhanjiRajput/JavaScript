@@ -196,10 +196,10 @@ let questions = [
   },
 ];
 
-questions.map((item) => {
+questions.map((item,index) => {
 
   let h3 = document.createElement("h3");
-  h3.innerHTML = `* ${item.question}`;
+  h3.innerHTML = `${index+1}). ${item.question}`;
 
   let hr = document.createElement("hr");
 
@@ -263,9 +263,9 @@ questions.map((item) => {
 const uimaker = () => {
   document.getElementById("display").innerHTML = "";
 
-  push_data.map((item) => {
+  push_data.map((item,index) => {
     let h3 = document.createElement("h3");
-    h3.innerHTML = `* ${item.add_question}`;
+    h3.innerHTML = `${index+20}). ${item.add_question}`;
 
     let hr = document.createElement("hr");
 
