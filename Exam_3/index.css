@@ -1,8 +1,15 @@
 #box{
     border-style: solid;
+    border-width: 1px;
     margin: 10px;
-    border-radius: 0px 10px 0px 10px;
-    padding: 5px;
+    border-radius: 0px 15px 0px 15px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+#box:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-color: azure;
 }
 
 .answer{
@@ -15,4 +22,69 @@
 
 .answer:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: azure;
+}
+
+#h3{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 3px;
+    font-weight: bold;
+    background-color: azure;
+}
+
+.h3{
+    color: blue;
+    font-weight: bold;
+}
+
+#hr{
+    height: 5px;
+    background-color:cadetblue;
+}
+
+.input{
+    width: 400px;
+    border-radius: 5px;
+    height: 40px;
+    transition-duration: 0.5s;
+    background-color:rgb(255, 249, 242);
+}
+
+.input:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: azure;
+}
+
+#data{
+    border-style: solid;
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 1px;
+    transition-duration: 0.5s;
+    background-color: azure;
+}
+
+#data:hover{
+    background-color: rgb(230, 230, 215);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#sub{
+    width: 120px;
+    border-style: none;
+    height: 40px;
+    background-color: cadetblue;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    color: white;
+    margin-left: 35%;
+}
+
+#sub:hover{
+    color: black;
+    background-color: rgb(193, 255, 130);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
 }

@@ -9,20 +9,25 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="text-center fs-1 mb-2">
+    <div class="text-center fs-1 mb-2" id="h3">
         Quiz App
     </div>
     <div id="show_data">
 
     </div>
+    <div id="display">
 
-    <div>
-        <form action="" id="data">
-            <input type="text" id="quest" placeholder="Enter Question">
-            <input type="text" id="a" placeholder="Enter Option A">
-            <input type="text" id="b" placeholder="Enter Option B">
-            <input type="text" id="c" placeholder="Enter Option C">
-            <input type="text" id="d" placeholder="Enter Option D">
+    </div>
+
+    <div class="d-flex justify-content-center mt-5">
+        <form id="data">
+            <input type="text" id="add_question" class="input" placeholder="Enter Question" required/><br><br>
+            <input type="text" id="a_answer" class="input" placeholder="Enter Option A" required/><br><br>
+            <input type="text" id="b_answer" class="input" placeholder="Enter Option B" required/><br><br>
+            <input type="text" id="c_answer" class="input" placeholder="Enter Option C" required/><br><br>
+            <input type="text" id="d_answer" class="input" placeholder="Enter Option D" required/><br><br>
+            <input type="text" id="correct_answer" class="input" placeholder="Enter Correct Answer" required/><br><br>
+            <input type="submit" id="sub"/>
         </form>
     </div>
 </body>
