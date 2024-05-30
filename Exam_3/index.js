@@ -1,5 +1,3 @@
-const push_data = [];
-
 let questions = [
 
   {
@@ -196,10 +194,10 @@ let questions = [
   },
 ];
 
-questions.map((item,index) => {
-
+//Function for Print Question
+const uimaker = (item, index) => {
   let h3 = document.createElement("h3");
-  h3.innerHTML = `${index+1}). ${item.question}`;
+  h3.innerHTML = `${index + 1}.  ${item.question}`;
 
   let hr = document.createElement("hr");
 
@@ -222,6 +220,7 @@ questions.map((item,index) => {
       span1.style.color = "red";
     }
   })
+
   span2.addEventListener("click", () => {
     if (span2.innerHTML == item.correct) {
       span2.style.color = "green";
@@ -244,118 +243,64 @@ questions.map((item,index) => {
     }
   })
 
+  let div1 = document.createElement("div");
+  div1.append(h3, hr, span1, span2, span3, span4);
+
+  document.getElementById("show_data").append(div1);
+
   h3.setAttribute("class", "h3");
   hr.setAttribute("id", "hr");
   span1.setAttribute("class", "answer");
   span2.setAttribute("class", "answer");
   span3.setAttribute("class", "answer");
   span4.setAttribute("class", "answer");
-
-  let div1 = document.createElement("div");
-  div1.append(h3, hr, span1, span2, span3, span4);
-
   div1.setAttribute("id", "box");
-
-  document.getElementById("show_data").append(div1);
-})
-
-//This is for New Added Question
-const uimaker = () => {
-  document.getElementById("display").innerHTML = "";
-
-  push_data.map((item,index) => {
-    let h3 = document.createElement("h3");
-    h3.innerHTML = `${index+20}). ${item.add_question}`;
-
-    let hr = document.createElement("hr");
-
-    let span1 = document.createElement("h5");
-    span1.innerHTML = item.a_answer;
-
-    let span2 = document.createElement("h5");
-    span2.innerHTML = item.b_answer;
-
-    let span3 = document.createElement("h5");
-    span3.innerHTML = item.c_answer;
-
-    let span4 = document.createElement("h5");
-    span4.innerHTML = item.d_answer;
-
-    span1.addEventListener("click", () => {
-      if (span1.innerHTML == item.correct_answer) {
-        span1.style.color = "green";
-      } else {
-        span1.style.color = "red";
-      }
-    })
-    span2.addEventListener("click", () => {
-      if (span2.innerHTML == item.correct_answer) {
-        span2.style.color = "green";
-      } else {
-        span2.style.color = "red";
-      }
-    })
-    span3.addEventListener("click", () => {
-      if (span3.innerHTML == item.correct_answer) {
-        span3.style.color = "green";
-      } else {
-        span3.style.color = "red";
-      }
-    })
-    span4.addEventListener("click", () => {
-      if (span4.innerHTML == item.correct_answer) {
-        span4.style.color = "green";
-      } else {
-        span4.style.color = "red";
-      }
-    })
-
-    h3.setAttribute("class", "h3");
-    hr.setAttribute("id", "hr");
-    span1.setAttribute("class", "answer");
-    span2.setAttribute("class", "answer");
-    span3.setAttribute("class", "answer");
-    span4.setAttribute("class", "answer");
-
-    let div1 = document.createElement("div");
-    div1.append(h3, hr, span1, span2, span3, span4);
-
-    div1.setAttribute("id", "box");
-
-    document.getElementById("show_data").append(div1);
-  })
 }
 
+//Call Function to Display
+questions.map((item, index) => {
+  uimaker(item, index);
+})
+
+//New Added Question
 const handledata = (e) => {
   e.preventDefault();
 
-  let get_data = {
-    add_question: document.getElementById("add_question").value,
-    a_answer: document.getElementById("a_answer").value,
-    b_answer: document.getElementById("b_answer").value,
-    c_answer: document.getElementById("c_answer").value,
-    d_answer: document.getElementById("d_answer").value,
-    correct_answer: document.getElementById("correct_answer").value,
-  }
+  let flag = false;
+  let flag1 = false;
+  let push_new_question = {
+    question: document.getElementById("add_question").value,
 
-  if (get_data.a_answer != get_data.correct_answer && get_data.b_answer != get_data.correct_answer && get_data.c_answer != get_data.correct_answer && get_data.d_answer != get_data.correct_answer) {
+    options: {
+      A: document.getElementById("a_answer").value,
+      B: document.getElementById("b_answer").value,
+      C: document.getElementById("c_answer").value,
+      D: document.getElementById("d_answer").value,
+    },
+    correct: document.getElementById("correct_answer").value,
+  }
+  if (push_new_question.options.A != push_new_question.correct && push_new_question.options.B != push_new_question.correct && push_new_question.options.C != push_new_question.correct && push_new_question.options.D != push_new_question.correct) {
     alert("Enter Correct Answer");
   } else {
-    let uname = "kidechadhanji@gmail.com";
-    let pass = "kidechadhanji";
+    flag = true;
+    let user = "dk";
+    let pass = "dk";
 
-    let u = prompt("Enter User Name");
-    let p = prompt("Enter Password");
-
-    if (u == uname && p == pass) {
-      push_data.push(get_data);
-      uimaker();
-    } else {
-      alert("Sorry..! You Are Not Valid User To Add Question...");
-      location.reload();
+    let u = prompt("Enter User Name..");
+    let p = prompt("Enter Password...");
+    if (user != u && pass != p) {
+      alert("Sorry....! You are Not Valid Admin to Add Queston...");
     }
+    else {
+      flag1 = true;
+    }
+  }
+
+  if (flag && flag1) {
+    questions.push(push_new_question);
+    uimaker(push_new_question, questions.length - 1);
+    document.getElementById("data").reset();
   }
 }
 
 document.querySelector("#data").addEventListener("submit", handledata);
-document.getElementById("a_answer").innerHTML="";

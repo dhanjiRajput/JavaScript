@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <div class="text-center fs-1 mb-2" id="h3">
+
+<body class="bg-dark">
+    <div class="text-center fs-1" id="h3">
         Quiz App
     </div>
-    <div id="show_data">
+    <div class="mx-5 p-3" id="main">
+        <div id="show_data">
 
-    </div>
-    <div id="display">
+        </div>
 
-    </div>
-
-    <div class="d-flex justify-content-center mt-5">
-        <form id="data">
-            <input type="text" id="add_question" class="input" placeholder="Enter Question" required/><br><br>
-            <input type="text" id="a_answer" class="input" placeholder="Enter Option A" required/><br><br>
-            <input type="text" id="b_answer" class="input" placeholder="Enter Option B" required/><br><br>
-            <input type="text" id="c_answer" class="input" placeholder="Enter Option C" required/><br><br>
-            <input type="text" id="d_answer" class="input" placeholder="Enter Option D" required/><br><br>
-            <input type="text" id="correct_answer" class="input" placeholder="Enter Correct Answer" required/><br><br>
-            <input type="submit" id="sub"/>
-        </form>
+        <div class="d-flex justify-content-center mt-5">
+            <form id="data">
+                <span style="color: red;">*All the Colums are Manadatory</span><br>
+                <input type="text" id="add_question" class="input" placeholder="Enter Question" required /><br><br>
+                <input type="text" id="a_answer" class="input" placeholder="Enter Option A" required /><br><br>
+                <input type="text" id="b_answer" class="input" placeholder="Enter Option B" required /><br><br>
+                <input type="text" id="c_answer" class="input" placeholder="Enter Option C" required /><br><br>
+                <input type="text" id="d_answer" class="input" placeholder="Enter Option D" required /><br><br>
+                <input type="text" id="correct_answer" class="input" placeholder="Enter Correct Answer"
+                    required /><br><br>
+                <input type="submit" id="sub" />
+            </form>
+        </div>
     </div>
 </body>
 <script src="./index.js"></script>
+
 </html>
