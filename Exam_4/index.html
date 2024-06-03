@@ -9,32 +9,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="mt-5 d-flex">
-        <div class="w-25 border p-4 d-flex justify-content-center mx-3">
-            <form id="data">
-                <h2>Create New Bank Account</h1><br>
-                <input type="number" id="account_no" placeholder="Enter Account Number" class="input"/><br><br>
-                <input type="text" id="account_name" placeholder="Enter Account Hoder Name" class="input"/><br><br>
-                <input type="number" id="number" placeholder="Enter Mobile Number" class="input"/><br><br>
-                <input type="text" id="address" placeholder="Enter Address" class="input"/><br><br><br>
-                <input type="submit" id="create" value="Create Account"/><br><br>
+    <div class="w-100">
+        <img src="https://www.axisbank.com/images/default-source/revamp_new/cards/cc-new/flipkart-credit-card-lisitng-banner-1920x630.jpg" height="300px" class="img-fluid">
+    </div>
+    <div class="mt-4 d-flex" id="main">
+        <div class="border p-4 d-flex justify-content-center m-3" id="main1">
+            <form id="data" class="text-center">
+                <h2 id="h2">Create New Bank Account</h1><br><br>
+                <input type="number" id="account_no" placeholder="Enter Account Number" class="input" required/><br><br>
+                <input type="text" id="account_name" placeholder="Enter Account Hoder Name" class="input" required/><br><br>
+                <input type="number" id="number" placeholder="Enter Mobile Number" class="input" required/><br><br>
+                <input type="text" id="address" placeholder="Enter Address" class="input" required/><br><br><br>
+                <input type="submit" id="create" value="Create Account" class="bt"/><br><br>
             </form>
         </div>
-        <div class="w-75 border mx-3 p-4">
-            <div id="show_data" class="box border">
-                Account Details
+        <div class=" border m-3" id="main2">
+            <div id="show_data" class="box border px-4">
+                <span class="fs-4">Account Details</span>
             </div>
 
             <div id="deposit" class="box border text-center p-4">
-                <input type="number" id="deposit_bl" placeholder="Enter Amount"><br><br>
-                <button id="deposit_balance">Deposit Money</button><br>
+                <input type="number" id="deposit_bl" placeholder="Enter Amount" class="input" required/><br><br>
+                <button id="deposit_balance" class="bt">Deposit Money</button><br>
             </div>
 
             <div id="balance" class="box border text-center p-4">
-                <button id="check_balance">Check Balance</button><br><br>
+                <button id="check_balance" class="bt">Check Balance</button><br><br>
                 <span id="check">To see Balance CLick the button</span>
             </div>
         </div>
+    </div>
+
+    <div id="cart">
+        
     </div>
 </body>
 <script src="./index.js"></script>
