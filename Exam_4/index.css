@@ -57,6 +57,7 @@
 
 #h2 {
     transition-duration: 0.8s;
+    color: rgb(255, 175, 175);
 }
 
 #h2:hover {
