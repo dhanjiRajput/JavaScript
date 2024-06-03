@@ -48,7 +48,7 @@ class Account{
 };
 
 let ac=new Account();
-ac.setname("abc")
+ac.setname("abc");
 ac.getname();
 ac.deposit(1000);
 ac.deposit(5000000);
