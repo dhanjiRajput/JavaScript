@@ -96,7 +96,7 @@ document.getElementById("check_balance").addEventListener("click", () => {
         document.getElementById("check").innerHTML = `Wallet Balance : ${bnk.getdata()}`;
         document.getElementById("check").style.color="blue";
     } else {
-        alert("Enter Your Correct Password");
+        alert("Sorry...!, Enter Your Correct PIN");
     }
 
 })

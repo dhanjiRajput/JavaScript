@@ -1,43 +1,43 @@
-.input{
+.input {
     width: 300px;
 }
 
-#show_data{
+#show_data {
     height: 150px;
     font-size: 20px;
 }
 
-.box{
+.box {
     margin: 20px;
     border-radius: 10px;
     transition-duration: 0.5s;
 }
 
-.box:hover{
+.box:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#main1{
-    width:30% ;
+#main1 {
+    width: 30%;
     border-radius: 10px;
     transition-duration: 0.5s;
 }
 
-#main1:hover{
+#main1:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#main2{
+#main2 {
     width: 70%;
     border-radius: 10px;
     transition-duration: 0.5s;
 }
 
-#main2:hover{
+#main2:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.bt{
+.bt {
     width: 150px;
     background-color: cadetblue;
     padding: 5px;
@@ -48,70 +48,82 @@
     transition-duration: 0.5s;
 }
 
-.bt:hover{
+.bt:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: rgb(49, 95, 97);
     color: white;
     border-radius: 10px;
 }
 
-#h2{
+#h2 {
     transition-duration: 0.8s;
 }
-#h2:hover{
+
+#h2:hover {
     text-decoration: underline;
     color: red;
 }
 
-.input{
+.input {
     height: 40px;
     border-radius: 5px;
     transition-duration: 0.5s;
 }
 
-.input:hover{
+.input:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#cart div img{
+#cart div img {
     height: 100px;
     width: 100px;
     transition-duration: 0.8s;
     margin-bottom: 10px;
 }
 
-#cart div img:hover{
+#cart div img:hover {
     transform: scale(1.2);
 }
 
-#cart{
+#cart {
     border-style: ridge;
     border-radius: 10px;
     margin: 15px;
     padding: 10px;
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-@media(max-width:768px){
-    #cart{
-       grid-template-columns: repeat(1,1fr); 
+@media(max-width:768px) {
+    #cart {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media(min-width:768px) and (max-width:1024px){
-    #cart{
-       grid-template-columns: repeat(3,1fr); 
+@media(min-width:768px) and (max-width:1024px) {
+    #cart {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-#div_img{
+#main {
+    display: grid;
+    grid-template-columns: max-content;
+}
+
+@media(max-width:768px) {
+    #main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#div_img {
     display: flex;
     justify-content: center;
     border: none;
 }
 
-#cart div button{
+#cart div button {
     height: 30px;
     width: 100px;
     border-radius: 0px 5px 0px 5px;
@@ -122,17 +134,17 @@
     cursor: pointer;
 }
 
-#cart div button:hover{
+#cart div button:hover {
     background-color: cornflowerblue;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#text_box{
+#text_box {
     height: 160px;
-    
+
 }
 
-.box{
+.box {
     transition-duration: 0.5s;
     border-style: solid;
     border-width: 2px;
@@ -141,7 +153,7 @@
     text-align: center;
 }
 
-.box:hover{
+.box:hover {
     border-width: 1px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -168,6 +180,6 @@
     }
 }
 
-#check{
+#check {
     color: rgb(255, 143, 143);
 }
