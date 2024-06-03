@@ -47,24 +47,24 @@ class Bank {
         }
     }
 
-    #isvalidwithdraw(amount){
-        if(amount>0){
-            if(this.#amount>=amount){
-                this.#amount-=amount;
+    #isvalidwithdraw(amount) {
+        if (amount > 0) {
+            if (this.#amount >= amount) {
+                this.#amount -= amount;
                 document.getElementById("check").innerHTML = bnk.getdata();
                 alert("You Purchase Successfully..");
-            }else{
+            } else {
                 alert("Not having Sufficient Balance to Buy....!");
             }
-        }else{
+        } else {
             alert("Amount Must be Greater than..!");
         }
     }
 
-    withdraw(amount){
-        if(this.#isvalidwithdraw(amount)){
+    withdraw(amount) {
+        if (this.#isvalidwithdraw(amount)) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
@@ -83,7 +83,7 @@ document.getElementById("deposit_balance").addEventListener("click", () => {
 
     bnk.deposit(dp);
 
-    document.getElementById("deposit_bl").innerHTML="";
+    document.getElementById("deposit_bl").innerHTML = "";
 
 })
 
@@ -94,7 +94,7 @@ document.getElementById("check_balance").addEventListener("click", () => {
     let p = prompt("Enter Your Wallet PIN");
     if (pas == p) {
         document.getElementById("check").innerHTML = `Wallet Balance : ${bnk.getdata()}`;
-        document.getElementById("check").style.color="blue";
+        document.getElementById("check").style.color = "blue";
     } else {
         alert("Sorry...!, Enter Your Correct PIN");
     }
@@ -110,8 +110,18 @@ const handledata = (e) => {
     let number = document.getElementById("number").value
     let address = document.getElementById("address").value
 
-    bnk.setdetails(account_no, account_name, number, address);
-    bnk.getdetails();
+    let user = "dk";
+    let pass = "dk";
+
+    let u = prompt("Enter Your UserName");
+    let p = prompt("Enter Your Passwrod");
+    if (u == user && pass == p) {
+        bnk.setdetails(account_no, account_name, number, address);
+        bnk.getdetails();
+    } else {
+        alert("Sorry...!, Enter Your Correct PIN");
+    }
+
 
     document.getElementById("data").reset();
 }
@@ -142,7 +152,7 @@ data.map((item) => {
     let button1 = document.createElement("button");
     button1.innerHTML = "BUY NOW";
 
-    button1.addEventListener("click",()=>{
+    button1.addEventListener("click", () => {
         bnk.withdraw(price.innerHTML);
     })
 
