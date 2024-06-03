@@ -89,11 +89,12 @@ document.getElementById("deposit_balance").addEventListener("click", () => {
 
 document.getElementById("check_balance").addEventListener("click", () => {
 
-    let pas = "dk";
+    let pas = "1994";
 
-    let p = prompt("To Check Balance Enter Password..");
+    let p = prompt("Enter Your Wallet PIN");
     if (pas == p) {
-        document.getElementById("check").innerHTML = bnk.getdata();
+        document.getElementById("check").innerHTML = `Wallet Balance : ${bnk.getdata()}`;
+        document.getElementById("check").style.color="blue";
     } else {
         alert("Enter Your Correct Password");
     }
