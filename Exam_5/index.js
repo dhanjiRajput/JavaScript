@@ -28,7 +28,7 @@ const uimaker = () => {
         btn1.setAttribute("id","btn");
 
         let span=document.createElement("span");
-        span.innerHTML=` - ${localStorage.getItem("count")}`;
+        span.innerHTML=` - ${localStorage.getItem("count")||0}`;
         btn1.addEventListener("click",()=>{
             count++;
             localStorage.setItem("count",count);
@@ -42,7 +42,7 @@ const uimaker = () => {
         btn2.setAttribute("id","btn");
 
         let span1=document.createElement("span");
-        span1.innerHTML=` - ${localStorage.getItem("count1")}`;
+        span1.innerHTML=` - ${localStorage.getItem("count1")||0}`;
         btn2.addEventListener("click",()=>{
             count1++;
             localStorage.setItem("count1",count1);
