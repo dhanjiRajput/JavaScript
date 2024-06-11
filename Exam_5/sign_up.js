@@ -12,7 +12,7 @@ const handledata=(e)=>{
 
     localStorage.setItem("user",JSON.stringify(user));
 
-    window.location.href="/Exam_5/index.html";
+    window.location.href="/Exam_5/login.html";
 }
 
 document.getElementById("sign_up").addEventListener("submit", handledata);
