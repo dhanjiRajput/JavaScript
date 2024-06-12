@@ -1,0 +1,42 @@
+#main{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login{
+    text-align: center;
+    border-style: solid;
+    padding: 30px;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.input:hover{
+    background-color: azure;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#submit{
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20PX;
+    background-color: azure;
+    border: none;
+    transition-duration: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#submit:hover{
+    background-color: rgb(217, 254, 254);
+    color: blue;
+}
