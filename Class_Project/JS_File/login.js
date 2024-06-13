@@ -1,5 +1,7 @@
 import getvalue from "../Components/helper.js";
+import navbar from "../Components/navbar.js";
 let userData = JSON.parse(localStorage.getItem("user"));
+document.getElementById("navbar").innerHTML=navbar();
 
 console.log(userData);
 const handledata = (e) => {

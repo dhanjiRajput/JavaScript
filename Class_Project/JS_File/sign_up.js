@@ -1,4 +1,15 @@
 import getvalue from "../Components/helper.js";
+import navbar from "../Components/navbar.js";
+let isLogin=localStorage.getItem("isLogin")||false;
+document.getElementById("navbar").innerHTML=navbar
+let getData=JSON.parse(localStorage.getItem("user"));
+
+if(isLogin){
+    document.getElementById("navbar").innerHTML=navbar("Log Out",getData.username);
+}
+else{
+    window.location.href="/Class_Project/Pages/login.html";
+}
 let flag=false;
 const handledata = (e) => {
     e.preventDefault();
