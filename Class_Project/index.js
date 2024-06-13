@@ -15,4 +15,4 @@ const handle=(e)=>{
 
     isLogin=false;
 }
-document.querySelector(".login").addEventListener("click",handle)
+document.getElementById("login").addEventListener("click",handle);

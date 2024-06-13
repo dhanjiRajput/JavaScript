@@ -1,7 +1,7 @@
 const navbar=(login="Login",signup="Sign UP")=>{
     return `<nav class="navbar navbar-expand-lg bg-dark fw-bold">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./Images/logo.avif" alt="Loading.." height="30px"
+                <a class="navbar-brand" href="#"><img src="../Class_Project/Images/logo.avif" alt="Loading.." height="30px"
                         width="50px" id="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -23,7 +23,7 @@ const navbar=(login="Login",signup="Sign UP")=>{
                             <a class="nav-link" href="../Class_Project/Pages/cart.html" id="nav_a"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link login" href="../Class_Project/Pages/login.html" id="nav_a"><i class="fa-solid fa-user"></i>${login}</a>
+                            <a class="nav-link" href="../Class_Project/Pages/login.html" id="nav_a"><i class="fa-solid fa-user"></i>${login}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Class_Project/Pages/sign_up.html" id="nav_a"><i class="fa-solid fa-user-plus"></i>${signup}</a>
