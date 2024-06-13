@@ -1,7 +1,7 @@
 import navbar from "./Components/navbar.js";
 import getvalue from "./Components/helper.js";
 let isLogin=localStorage.getItem("isLogin")||false;
-document.getElementById("navbar").innerHTML=navbar()
+document.getElementById("navbar").innerHTML=navbar
 let getData=JSON.parse(localStorage.getItem("user"));
 
 if(isLogin){
@@ -10,10 +10,9 @@ if(isLogin){
 else{
     window.location.href="/Class_Project/Pages/login.html";
 }
-
-const handledata=(e)=>{
+const handle=(e)=>{
     e.preventDefault();
 
     isLogin=false;
 }
-document.getElementById("login").addEventListener("click",handledata);
+document.querySelector(".login").addEventListener("click",handle)

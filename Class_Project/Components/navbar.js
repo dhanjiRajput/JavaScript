@@ -23,7 +23,7 @@ const navbar=(login="Login",signup="Sign UP")=>{
                             <a class="nav-link" href="../Class_Project/Pages/cart.html" id="nav_a"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Class_Project/Pages/login.html" id="nav_a" id="login"><i class="fa-solid fa-user"></i>${login}</a>
+                            <a class="nav-link login" href="../Class_Project/Pages/login.html" id="nav_a"><i class="fa-solid fa-user"></i>${login}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../Class_Project/Pages/sign_up.html" id="nav_a"><i class="fa-solid fa-user-plus"></i>${signup}</a>
