@@ -26,7 +26,7 @@ document.getElementById("login").addEventListener("click", (e) => {
 
 //Show Cart
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-console.log(cart);
+
 const mapper=(data)=>{
     document.getElementById("list").innerHTML="Loading Data.....";
 
