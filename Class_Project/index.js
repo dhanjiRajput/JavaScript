@@ -1,18 +1,22 @@
+
+//Import Navbar From Component File
 import navbar from "./Components/navbar.js";
-import getvalue from "./Components/helper.js";
-let isLogin=localStorage.getItem("isLogin")||false;
-document.getElementById("navbar").innerHTML=navbar
-let getData=JSON.parse(localStorage.getItem("user"));
+document.getElementById("navbar").innerHTML = navbar();
 
-if(isLogin){
-    document.getElementById("navbar").innerHTML=navbar("Log Out",getData.username);
+//IF not login send him to login page
+let user = JSON.parse(localStorage.getItem("user"));
+let IsLogin = localStorage.getItem("IsLogin") || false;
+
+
+if (IsLogin) {
+    document.getElementById("navbar").innerHTML = navbar("Log Out", user.name);
+} else {
+
+    window.location.href = "/Class_Project/Pages/login.html";
 }
-else{
-    window.location.href="/Class_Project/Pages/login.html";
-}
-const handle=(e)=>{
+
+document.getElementById("login").addEventListener("click", (e) => {
     e.preventDefault();
-
-    isLogin=false;
-}
-document.getElementById("login").addEventListener("click",handle);
+    localStorage.setItem("IsLogin", false);
+    window.location.href = "/Class_Project/Pages/login.html";
+})

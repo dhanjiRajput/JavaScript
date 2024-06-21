@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,22 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div id="navbar">
-        <!-- append from js -->
+
     </div>
     <div id="main">
         <form id="add_product">
-            <h3 style="color: blue;"><u>Add New Product</u></h3><br>
-            <input type="text" id="title" placeholder="Enter Product Title" class="input" required/><br><br>
-            <input type="url" id="img" placeholder="Enter Image URL" class="input" required/><br><br>
-            <input type="text" id="category" placeholder="Enter Category" class="input" required/><br><br>
-            <input type="price" id="price" placeholder="Enter Price" class="input" required/><br><br>
+            <h4 style="color: red;"><u>Add New Products</u></h4><br>
+            <input type="url" id="img" placeholder="Enter Image URL" class="input"/><br><br>
+            <input type="text" id="title" placeholder="Enter Product Title" class="input"/><br><br>
+            <input type="number" id="price" placeholder="Enter Product Price" class="input"/><br><br>
+            <input type="text" id="category" placeholder="Enter Product Category" class="input"/><br><br>
             <input type="submit" id="submit"/>
         </form>
     </div>
 </body>
 <script type="module" src="../JS_File/add_product.js"></script>
+
 </html>

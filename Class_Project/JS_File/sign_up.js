@@ -1,46 +1,22 @@
-import getvalue from "../Components/helper.js";
-import navbar from "../Components/navbar.js";
-let isLogin=localStorage.getItem("isLogin")||false;
-document.getElementById("navbar").innerHTML=navbar
-let getData=JSON.parse(localStorage.getItem("user"));
 
-if(isLogin){
-    document.getElementById("navbar").innerHTML=navbar("Log Out",getData.username);
-}
-else{
-    window.location.href="/Class_Project/Pages/login.html";
-}
-let flag=false;
-const handledata = (e) => {
+//Import Navbar From  Components
+import navbar from "../Components/navbar.js";
+document.getElementById("navbar").innerHTML=navbar();
+
+
+//Fetch Data From Sign UP Form
+const HandleData=(e)=>{
     e.preventDefault();
 
-    let user = {
-        username: getvalue("username"),
-        email: getvalue("email"),
-        password: getvalue("password")
+    let user={
+        name:document.getElementById("name").value,
+        email:document.getElementById("email").value,
+        password:document.getElementById("password").value,
     }
 
-    const validusername = /^[0-9A-Za-z]{6,16}$/;
-    const validpassword=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
-
-    if (validusername.test(user.username)) {
-        flag=true;
-    }else{
-        document.getElementById("username_valid").innerHTML="Invalid UserName";
-    }
-
-    if(validpassword.test(user.password)){
-        flag=true;
-    }else{
-        document.getElementById("password_valid").innerHTML="Password Must Be Strong..";
-    }
-
-    if(flag){
-        localStorage.setItem("user",JSON.stringify(user));
-        localStorage.setItem("isLogin",true);
-        window.location.href="/Class_Project/index.html";
-    }
-
-
+    localStorage.setItem("user",JSON.stringify(user));
+    localStorage.setItem("IsLogin",true);
+    alert("New User Registered Successfully...");
+    window.location.href="/Class_Project/index.html";
 }
-document.getElementById("sign_up").addEventListener("submit", handledata);
+document.getElementById("sign_up").addEventListener("submit",HandleData);
