@@ -14,7 +14,7 @@ const delete_row=(index)=>{
 }
 
 const mapper = (data) => {
-    document.getElementById("list").innerHTML = "Loading Data.....";
+    document.getElementById("list").innerHTML = "";
 
     data.map((item,index) => {
 

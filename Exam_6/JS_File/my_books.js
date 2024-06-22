@@ -1,7 +1,7 @@
 let mybook = JSON.parse(localStorage.getItem("mybook")) || [];
 
 const mapper = (data) => {
-    document.getElementById("list").innerHTML = "Loading Data.....";
+    document.getElementById("list").innerHTML = "";
 
     data.map((item) => {
 

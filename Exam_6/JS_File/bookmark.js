@@ -1,7 +1,7 @@
 let bookmark = JSON.parse(localStorage.getItem("bookmark")) || [];
 
 const mapper = (data) => {
-    document.getElementById("list").innerHTML = "Loading Data.....";
+    document.getElementById("list").innerHTML = "";
 
     data.map((item) => {
 
