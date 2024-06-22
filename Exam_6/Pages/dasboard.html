@@ -39,15 +39,25 @@
                         <a class="nav-link" href="/Exam_6/Pages/bookmark.html" id="nav_a"><i class="fa-solid fa-bookmark"></i></i>BookMark</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search" id="search">
-                    <input class="form-control me-2" type="search" id="search_input" placeholder="Search" aria-label="Search">
+                <form class="d-flex" role="search" id="search_category">
+                    <select id="search_input" class="input form-control me-1">
+                        <option>Select Book's Category</option>
+                        <option>Spiritual</option>
+                        <option>Horror</option>
+                        <option>Fiction</option>
+                        <option>Non-Fiction</option>
+                        <option>Novels</option>
+                    </select>
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 </div>
-<div id="cart_list" class="mt-4">
+<div id="book_count">
+    Total Available Books : 0
+</div>
+<div id="cart_list">
     <div id="table">
         <table class="table table-dark table-striped table-hover">
             <thead id="head">

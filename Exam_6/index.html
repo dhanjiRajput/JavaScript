@@ -50,11 +50,11 @@
 <div id="main">
     <form id="book_data">
         <h4 style="color: red;"><u>Add New Book</u></h4><br>
-        <input type="text" id="book_name" placeholder="Enter Book's Name" class="input"/><br><br>
-        <input type="text" id="author_name" placeholder="Enter Author Name" class="input"/><br><br>
-        <input type="text" id="description" placeholder="Enter Book's Description" class="input"/><br><br>
-        <input type="date" id="date" class="input"/><br><br>
-        <select id="category" class="input">
+        <input type="text" id="book_name" placeholder="Enter Book's Name" class="input" required/><br><br>
+        <input type="text" id="author_name" placeholder="Enter Author Name" class="input" required/><br><br>
+        <input type="text" id="description" placeholder="Enter Book's Description" class="input" required/><br><br>
+        <input type="date" id="date" class="input" required/><br><br>
+        <select id="category" class="input" required>
             <option>Select Book's Category</option>
             <option>Spiritual</option>
             <option>Horror</option>
@@ -62,7 +62,7 @@
             <option>Non-Fiction</option>
             <option>Novels</option>
         </select><br><br>
-        <input type="number" id="price" placeholder="Enter Book's Price" class="input"/><br><br>
+        <input type="number" id="price" placeholder="Enter Book's Price" class="input" required/><br><br>
         <input type="submit" id="submit"/>
     </form>
 </div>
