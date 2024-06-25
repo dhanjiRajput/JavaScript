@@ -99,6 +99,7 @@ const HandleSort=(sort)=>{
         mapper(temp);
     }
 }
+
 document.getElementById("lth").addEventListener("click",()=>HandleSort("lth"));
 document.getElementById("htl").addEventListener("click",()=>HandleSort("htl"));
 document.getElementById("all").addEventListener("click",()=>{

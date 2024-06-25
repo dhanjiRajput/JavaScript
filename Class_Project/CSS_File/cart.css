@@ -80,10 +80,15 @@
 }
 
 #cart_img:hover{
-    transform: scale(5);
+    transform: scale(2);
 }
 
 #list,#head{
     text-align: center;
     align-items: center;
+}
+
+#btnn{
+    font-size: 20px;
+    cursor: pointer;
 }

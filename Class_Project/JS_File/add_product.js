@@ -26,7 +26,7 @@ document.getElementById("login").addEventListener("click", (e) => {
 
 
 //Fetch Data from the Add Product Page
-let products = JSON.parse(localStorage.getItem("products")) || [];
+let products = JSON.parse(localStorage.getItem("product")) || [];
 const HandleData=(e)=>{
     e.preventDefault();
 
