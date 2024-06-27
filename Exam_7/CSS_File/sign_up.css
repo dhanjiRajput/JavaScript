@@ -71,25 +71,25 @@
     transform: scaleX(1);
 }
 
-/* CSS for Add Product Page */
+/* CSS for Sign UP Page */
 body{
     background-color: rgb(231, 231, 231);
-  }
-  #main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 40px;
-  }
-  
-  #add_product {
-      border-style: solid;
-      border-width: 1px;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      background-color: rgb(255, 255, 242);
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#sign_up {
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 242);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .input {

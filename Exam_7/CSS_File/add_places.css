@@ -71,7 +71,7 @@
     transform: scaleX(1);
 }
 
-/* CSS for Add Product Page */
+/* CSS for Add New Places Page */
 body{
     background-color: rgb(231, 231, 231);
   }
@@ -82,7 +82,7 @@ body{
       margin-top: 40px;
   }
   
-  #add_product {
+  #add_places {
       border-style: solid;
       border-width: 1px;
       padding: 20px;
@@ -93,9 +93,9 @@ body{
 }
 
 .input {
-    width: 250px;
+    width: 300px;
     border-radius: 5px;
-    height: 40px;
+    height: 30px;
 }
 
 #submit {
