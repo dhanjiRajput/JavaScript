@@ -70,3 +70,64 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+
+/* CSS for wish list page */
+#show_places{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 5px;
+}
+#div_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#img1{
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+#img1:hover{
+  transform: scale(1.04);
+}
+
+#div_btn{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#btnn{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#box{
+  border-style: groove;
+  padding: 15px;
+  border-radius: 0px 10px 0px 10px;
+}
+
+#filter{
+  display: flex;
+  margin: 10px;
+}
+
+.filter{
+  margin-left: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+
+#div_like{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

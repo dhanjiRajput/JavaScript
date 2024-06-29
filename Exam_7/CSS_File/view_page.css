@@ -70,3 +70,55 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+
+/* CSS for view page  */
+#slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#carouselExampleAutoplaying{
+  width: 55%;
+  height: 400px;
+}
+
+.slide_img{
+  height: 395px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#show_data,#comment_section,#main_comment{
+  display: flex;
+  justify-content: center;
+}
+
+#box{
+  width: 55%;
+}
+
+#input_comment{
+  width: 55%;
+  margin-top: 20px;
+}
+
+#comments{
+  text-align: center;
+  width: 100%;
+}
+
+#com{
+  width: 55%;
+  border-style: groove;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#comment_box{
+  border-style: groove;
+  margin-bottom: 10px;
+  border-radius: 0px 10px 0px 10px;
+  width: 100%;
+}

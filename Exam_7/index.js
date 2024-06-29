@@ -24,6 +24,7 @@ document.getElementById("login").addEventListener("click", (e) => {
 
 
 //Fetch Data From Local storage
+let wish_list=JSON.parse(localStorage.getItem("wish"))||[];
 let places=JSON.parse(localStorage.getItem("places")) ||[];
 
 const Handleqty=(index)=>{
@@ -43,8 +44,8 @@ const mapper=(data)=>{
         div_img.setAttribute("id","div_img");
         img1.setAttribute("id","img1");
 
-        let title=createTag("h4",item.title);
-        let price=createTag("h5",item.price);
+        let title=createTag("h5",item.title);
+        let price=createTag("h6",item.price);
 
         let like=createTag("div",`<i class="fa-solid fa-thumbs-up"></i>`);
         like.addEventListener("click",()=>Handleqty(index));
@@ -56,6 +57,11 @@ const mapper=(data)=>{
         let wish=createTag("div",`<i class="fa-regular fa-heart"></i>`);
         like.setAttribute("id","btnn");
         wish.setAttribute("id","btnn");
+        wish.addEventListener("click",()=>{
+            wish_list.push(item);
+            localStorage.setItem("wish",JSON.stringify(wish_list));
+            alert("You Added this places to Your WIsh List...")
+        })
 
         let div_btn=document.createElement("div");
         div_btn.append(div_like,wish);
@@ -65,11 +71,10 @@ const mapper=(data)=>{
         box.append(div_img,title,price,div_btn);
         box.setAttribute("id","box");
         
-        box.addEventListener("click",()=>{
-            
+        div_img.addEventListener("click",()=>{
+            localStorage.setItem("index",index);
             window.location.href = "/Exam_7/Pages/view_page.html";
         })
-
         document.getElementById("show_places").append(box);
     })
 }

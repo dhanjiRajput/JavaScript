@@ -31,9 +31,9 @@ const HandleData=(e)=>{
         img3:getvalue("img3"),
         title:getvalue("title"),
         price:getvalue("price"),
-        qty:0
+        qty:0,
+        comment:"Comments",
     }
-
     push_data.push(data);
     localStorage.setItem("places",JSON.stringify(push_data));
     alert("Added Successfully......");
