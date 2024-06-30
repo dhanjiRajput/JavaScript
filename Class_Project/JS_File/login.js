@@ -23,6 +23,7 @@ const HandleData=(e)=>{
             alert("Incorrect PassWOrd.....");
         }else{
             alert("Login SuccessFully....");
+            localStorage.setItem("IsLogin",true);
             window.location.href="/Class_Project/index.html";
         }
     }else{

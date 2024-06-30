@@ -17,7 +17,7 @@ if (IsLogin) {
 
 document.getElementById("login").addEventListener("click", (e) => {
     e.preventDefault();
-    localStorage.setItem("IsLogin", false);
+    localStorage.removeItem("IsLogin");
     window.location.href = "/Exam_7/Pages/login.html";
 })
 

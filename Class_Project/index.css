@@ -70,3 +70,12 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+
+/* CSS for index page */
+#carouselExampleRide{
+  margin-top: 10px;
+}
+
+#slide_img{
+  height: 400px;
+}

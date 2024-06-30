@@ -72,6 +72,10 @@
 }
 
 /* CSS for Login Page */
+body{
+    background-color: gainsboro;
+}
+
 #main {
     display: flex;
     justify-content: center;
@@ -85,6 +89,7 @@
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    background-color: beige;
 }
 
 .input {

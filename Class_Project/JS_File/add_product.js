@@ -20,7 +20,7 @@ if (IsLogin) {
 
 document.getElementById("login").addEventListener("click", (e) => {
     e.preventDefault();
-    localStorage.setItem("IsLogin", false);
+    localStorage.removeItem("IsLogin");
     window.location.href = "/Class_Project/Pages/login.html";
 })
 
