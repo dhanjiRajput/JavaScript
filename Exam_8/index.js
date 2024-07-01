@@ -15,6 +15,11 @@ const getdata=async()=>{
         mapper(temp);
     })
 
+    document.getElementById("hrate").addEventListener("click",()=>{
+        let temp=(res.products).sort((a,b)=>b.rating-a.rating);
+        mapper(temp);
+    })
+
     document.getElementById("all").addEventListener("click",()=>{
         mapper(res.products);
     })
@@ -44,11 +49,15 @@ const mapper=(data)=>{
         img_div.setAttribute("id","img_div");
 
         let title=createTag("h6",item.title);
-        let price=createTag("h6",item.price);
-        let category=createTag("h6",item.category);
+        let price=createTag("h6",`Rs. ${item.price}`);
+        let category=createTag("h6",`Category : ${item.category}`);
+        let rate=createTag("h6",`Ratings : <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> ${item.rating}`);
+        let rate_div=document.createElement("div");
+        rate_div.append(category,rate);
+        rate_div.setAttribute("id","rate_div");
 
         let box=document.createElement("div");
-        box.append(img_div,title,price,category);
+        box.append(img_div,title,price,rate_div);
         box.setAttribute("id","box");
 
         box.addEventListener("click",()=>{

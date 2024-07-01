@@ -14,7 +14,7 @@ const mapper=(data)=>{
     let title=createTag("h6",data.title);
     let price=createTag("h6",`Rs. ${data.price}`);
     let category=createTag("h6",`Category : ${data.category}`);
-    let rating=createTag("h6",`Rating : ${data.rating}`);
+    let rating=createTag("h6",`Rating : <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>${data.rating}`);
     let stock=createTag("h6",`In Stock : ${data.stock}`);
     let brand=createTag("h6",`Brand : ${data.brand}`);
     let available=createTag("h6",`Availability : ${data.availabilityStatus}`);
@@ -26,7 +26,7 @@ const mapper=(data)=>{
     document.getElementById("show_api_data").append(box);
 
     data.reviews.map((item)=>{
-        let rate=createTag("h6",`Ratings : ${item.rating}`);
+        let rate=createTag("h6",`Ratings : <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>${item.rating}`);
         let comment=createTag("p",item.comment);
         let date=createTag("h6",item.date);
 
