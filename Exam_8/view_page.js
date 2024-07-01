@@ -35,6 +35,5 @@ const mapper=(data)=>{
         box1.setAttribute("id","box1");
 
         document.getElementById("show").append(box1);
-        box1.setAttribute("id","box");
     }) 
 }
