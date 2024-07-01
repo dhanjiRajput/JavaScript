@@ -1,0 +1,47 @@
+#main{
+    display: flex;
+}
+
+#side{
+    width: 20%;
+    border-style: groove;
+    margin: 10px;
+    padding: 10px;
+}
+
+.filter{
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#show_api_data{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin: 10px;
+    width: 80%;
+}
+
+#box{
+    border-style: groove;
+}
+
+#img_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:768px){
+    #main{
+        display: block;
+    }
+
+    #side{
+        width: max-content;
+    }
+
+    #show_api_data{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
