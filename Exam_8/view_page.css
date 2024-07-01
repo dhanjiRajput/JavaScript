@@ -1,3 +1,18 @@
 #box1{
     border-style: groove;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#data{
+    border-style: groove;
+    border-radius: 10px;
+    padding: 10px;
 }

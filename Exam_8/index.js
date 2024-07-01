@@ -55,7 +55,7 @@ const mapper=(data)=>{
             localStorage.setItem("key",item.id);
 
             console.log(item.id);
-            window.location.href="/view_page.html";
+            window.location.href="/Exam_8/view_page.html";
         })
         document.getElementById("show_api_data").append(box);
     })
