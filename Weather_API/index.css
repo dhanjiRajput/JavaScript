@@ -6,7 +6,7 @@
 }
 
 #weather_div{
-    width: 900px;
+    width: 800px;
     height: 500px;
     border-radius: 15px;
     display: flex;
@@ -22,6 +22,7 @@
     border-radius: 15px;
     margin-right: 17px;
     background-color: rgb(32, 43, 59);
+    text-align: center;
 }
 
 #div2{
@@ -36,6 +37,8 @@
     height: 460px;
     border-radius: 15px;
     background-color: rgb(32, 43, 59);
+    padding: 20px;
+    color: white;
 }
 
 #div2_1{
@@ -58,6 +61,10 @@
     height: 26%;
     margin-bottom: 10px;
     background-color: rgb(32, 43, 59);
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 
 #div2_4{
@@ -67,11 +74,16 @@
     background-color: rgb(32, 43, 59);
 }
 
+#img1{
+    height: 120px;
+    width: 100%;
+    border-radius: 15px;
+}
 #cityname{
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px;
     height: 30px;
     border: none;
-    width: 83%;
+    width: 100%;
     background-color: rgb(32, 43, 59);
     color: white;
     font-size: 12px;
@@ -96,6 +108,12 @@
 #sun{
     height: 160px;
     width: 160px;
+}
+
+#weather_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #show_data{
