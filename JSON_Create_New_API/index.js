@@ -65,4 +65,3 @@ const mapper = (data) => {
 
 let data= await get_method();
 mapper(data);
-
