@@ -16,7 +16,19 @@ export const create_tag=(name,value)=>{
 export const delete_method=async(index)=>{
     let req=await fetch(`http://localhost:3000/products/${index}`,{
         method:"DELETE",
-        headers:{"Content-Type":"application/json"},
     })
-    let res=await req.json();
+}
+
+export const get_method = async () => {
+    let req = await fetch("http://localhost:3000/products");
+    let res = await req.json();
+    return res;
+}
+
+export const patch_method=async(products,id)=>{
+    let req=await fetch(`http://localhost:3000/products/${id}`,{
+        method:"PATCH",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(products)
+    })
 }

@@ -1,13 +1,6 @@
-import { create_tag, delete_method, post_method } from "./method.js";
+import { create_tag, delete_method, get_method, patch_method, post_method } from "./method.js";
 
-const get_method = async () => {
-    let req = await fetch("http://localhost:3000/products");
-    let res = await req.json();
-    mapper(res);
-}
-
-get_method();
-
+let id=-1;
 document.getElementById("database").addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -18,10 +11,21 @@ document.getElementById("database").addEventListener("submit", (e) => {
         category: document.getElementById("category").value,
     }
 
-    post_method(products);
+    if(id==-1){
+        post_method(products);
+    }else{
+        patch_method(products,id);
+    }
 });
 
-
+const handleupdate=(item)=>{
+        document.getElementById("image").value=item.image;
+        document.getElementById("title").value=item.title;
+        document.getElementById("price").value=item.price;
+        document.getElementById("category").value=item.category;
+        document.getElementById("submit").value="update";
+        id=item.id;
+}
 
 const mapper = (data) => {
     document.getElementById("show_data").innerHTML = "";
@@ -36,10 +40,8 @@ const mapper = (data) => {
         let price = create_tag("h6", item.price);
         let category = create_tag("h6", item.category);
 
-        let buy=create_tag("button","Buy Now");
-        buy.addEventListener("click",()=>{
-            alert("Successfully Ordered Products..");
-        })
+        let buy=create_tag("button","Update");
+        buy.addEventListener("click",()=>handleupdate(item));
 
         let delte=create_tag("button","Delete");
         delte.addEventListener("click",()=>{
@@ -60,3 +62,7 @@ const mapper = (data) => {
         btn_div.setAttribute("id","btn_div");
     })
 }
+
+let data= await get_method();
+mapper(data);
+

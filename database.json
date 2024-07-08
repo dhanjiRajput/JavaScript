@@ -3,6 +3,13 @@
     {
       "id": "3a2f",
       "image": "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80",
+      "title": "Forest",
+      "price": "300",
+      "category": "Flower"
+    },
+    {
+      "id": "3d56",
+      "image": "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80",
       "title": "Nature",
       "price": "300",
       "category": "Flower"
