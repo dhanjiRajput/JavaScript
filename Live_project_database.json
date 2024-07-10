@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "c9d7",
+      "name": "Dhanji",
+      "email": "dk@gmail.com",
+      "password": "dk"
+    },
+    {
+      "id": "e2af",
+      "name": "Dhanji",
+      "email": "dk@gmail.com",
+      "password": "dk"
+    },
+    {
+      "id": "bd2b",
+      "name": "Dhanji",
+      "email": "dk@gmail.com",
+      "password": "dk"
+    },
+    {
+      "id": "b5f5",
+      "name": "Dhanji",
+      "email": "dk@gmail.com",
+      "password": "dk"
+    }
+  ]
+}

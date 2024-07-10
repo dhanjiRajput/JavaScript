@@ -14,7 +14,6 @@ if (IsLogin) {
     window.location.href = "/Class_Project/Pages/login.html";
 }
 
-
 document.getElementById("login").addEventListener("click", (e) => {
     e.preventDefault();
     localStorage.removeItem("IsLogin");

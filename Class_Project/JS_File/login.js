@@ -6,7 +6,6 @@ document.getElementById("navbar").innerHTML=navbar();
 //Import User Data from Local Storage
 let getData=JSON.parse(localStorage.getItem("user"));
 
-
 //Login User
 const HandleData=(e)=>{
     e.preventDefault();
