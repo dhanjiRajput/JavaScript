@@ -21,9 +21,10 @@
     <div id="main">
         <form id="sign_up">
             <h4 style="color:white;"><u>New Register</u></h4><br>
-            <input type="text" id="name" placeholder="Enter User Name" class="input"/><br><br>
-            <input type="email" id="email" placeholder="Enter Email" class="input"/><br><br>
-            <input type="password" id="password" placeholder="Enter password" class="input"/><br><br><br>
+            <input type="text" id="name" placeholder="Enter User Name" class="input" required/><br><br>
+            <input type="email" id="email" placeholder="Enter Email" class="input" required/><br><br>
+            <input type="password" id="password" placeholder="Enter password" class="input" required/><br>
+            <span id="password_valid">Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character</span><br><br>
             <input type="submit" id="submit"/>
         </form>
     </div>

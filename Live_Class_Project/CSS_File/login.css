@@ -86,7 +86,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    margin-top: 60px;
 }
 
 #login_data {
@@ -99,6 +99,14 @@ body{
     border-style: solid;
     border-width: 15px;
     border-color:rgb(32, 43, 59) ;
+}
+
+#forget{
+    width: 250px;
+    text-align: end;
+    text-decoration: underline;
+    color: rgb(77, 77, 255);
+    cursor: pointer;
 }
 
 .input {

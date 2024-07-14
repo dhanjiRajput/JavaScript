@@ -1,4 +1,10 @@
 export const User_API={
+    get_email:async (email)=>{
+        let req=await fetch(`http://localhost:3000/users?email=${email}`);
+        let res=await req.json();
+        return res;
+    },
+
     get:async ()=>{
         let req=await fetch(`http://localhost:3000/users`);
         let res=await req.json();

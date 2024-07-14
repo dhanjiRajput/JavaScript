@@ -20,7 +20,7 @@ export const delete_method=async(index)=>{
 }
 
 export const get_method = async () => {
-    let req = await fetch("http://localhost:3000/products");
+    let req = await fetch(`http://localhost:3000/products`);
     let res = await req.json();
     return res;
 }

@@ -5,8 +5,8 @@ document.getElementById("navbar").innerHTML = navbar();
 //Data Send to API & Local Storage
 import { getvalue } from "../Components/helper.js";
 import { User_API } from "../Components/API_Method.js";
-let user = JSON.parse(localStorage.getItem("user")) || [];
-const handledata = (e) => {
+
+const handledata = async (e) => {
     e.preventDefault();
 
     let data = {
@@ -15,11 +15,21 @@ const handledata = (e) => {
         password: getvalue("password"),
     }
 
-    user.push(data);
-    User_API.post(data);
-    localStorage.setItem("user", JSON.stringify(user));
-    localStorage.setItem("IsLogin", true);
-    window.location.href = "/Live_Class_Project/index.html";
+    const validpassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    let email = await User_API.get_email(data.email);
+    if (email.length != 0) {
+        alert("User Already Exist....");
+    } else {
+        if (validpassword.test(data.password)) {
+            User_API.post(data);
+            localStorage.setItem("IsLogin", true);
+            localStorage.setItem("user", JSON.stringify(data));
+            alert("User Registered Successfully....");
+            window.location.href = "/Live_Class_Project/index.html";
+        }else{
+            document.getElementById("password").style.border = "2px solid red";
+            window.navigator.vibrate(1000);
+        }
+    }
 }
 document.getElementById("sign_up").addEventListener("submit", handledata);
-

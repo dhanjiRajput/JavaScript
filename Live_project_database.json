@@ -1,28 +1,22 @@
 {
   "users": [
     {
-      "id": "c9d7",
+      "id": "2193",
       "name": "Dhanji",
       "email": "dk@gmail.com",
       "password": "dk"
     },
     {
-      "id": "e2af",
+      "id": "5e66",
       "name": "Dhanji",
-      "email": "dk@gmail.com",
+      "email": "dk1@gmail.com",
       "password": "dk"
     },
     {
-      "id": "bd2b",
+      "id": "ddb5",
       "name": "Dhanji",
-      "email": "dk@gmail.com",
-      "password": "dk"
-    },
-    {
-      "id": "b5f5",
-      "name": "Dhanji",
-      "email": "dk@gmail.com",
-      "password": "dk"
+      "email": "dk2@gmail.com",
+      "password": "DKRajput@12345"
     }
   ]
 }
