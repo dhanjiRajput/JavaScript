@@ -1,0 +1,108 @@
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#audio_area{
+    height: 600px;
+    width: 1000px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color:rgb(11, 19, 30);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#audio_data{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#audio_image{
+    height: 100%;
+    width: 48%;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+#a_image{
+    height: 195px;
+    width: 458px;
+    border-radius: 15px;
+}
+
+#audio_control{
+    height: 100%;
+    width: 49%;
+    background-color: rgb(32, 43, 59);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#audio_list{
+    height: 61%;
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: rgb(32, 43, 59); */
+    border-radius: 15px;
+    color: white;
+    overflow: scroll;
+}
+
+#music_name{
+    background-color: rgb(32, 43, 59);
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#music_name:hover{
+    background-color: rgb(46, 62, 87);
+}
+
+.add_class{
+    background-color: rgb(46, 62, 87);
+}
+
+.remove_class{
+    background-color: rgb(32, 43, 59);
+}
+
+#audio{
+    height: 35px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.btnn{
+    height: 35px;
+    background-color: rgb(154, 184, 124);
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+    font-weight: bold;
+    color:forestgreen ;
+    margin-right: 5px;
+    transition-duration: 0.5s;
+}
+
+.btnn:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: rgb(147, 206, 87);
+}
+
+.track{
+    background-color:rgb(11, 19, 30);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding-left: 20px;
+}
