@@ -1,0 +1,46 @@
+#head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo{
+    height: 40px;
+    width: 150px;
+}
+
+#input{
+    width: 600px;
+    border-radius: 15px;
+    height: 35px;
+    padding-left: 15px;
+    border-width: 1px;
+}
+
+#hr{
+    height: 1px;
+    background-color: black;
+    width: 98%;
+}
+#hr1{
+    display: flex;
+    justify-content: center;
+}
+
+#poster{
+    height: 100px;
+    width: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#show_data{
+    margin: 50px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
