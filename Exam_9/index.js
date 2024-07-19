@@ -106,11 +106,19 @@ const music = (index) => {
 }
 
 playlist.map((item, i) => {
-    let name = document.createElement("h6");
+    let name = document.createElement("div");
     name.innerHTML = `${item.name}..........<img src="https://static.wixstatic.com/media/5a2d7b_f676415472ab425a8345b94ed3f36c06.gif" height="20px" width="40px">`;
-    name.setAttribute("id", "music_name")
+    name.setAttribute("class","ps-3")
     name.addEventListener("click", () => {
         music(i);
     })
-    document.getElementById("audio_list").append(name);
+
+    let img=document.createElement("img");
+    img.src=item.img;
+    img.setAttribute("id","img_list");
+
+    let box=document.createElement("div");
+    box.append(name,img);
+    box.setAttribute("id","music_name");
+    document.getElementById("audio_list").append(box);
 })
