@@ -14,10 +14,10 @@ export const navbar = (login="Login",signup="Sign UP") => {
                             <a class="nav-link ms-0" href="/Live_Class_Project/index.html" id="nav_a"><i class="fa-solid fa-house"></i>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="nav_a"><i class="fa-solid fa-bag-shopping"></i>Product</a>
+                            <a class="nav-link" href="/Live_Class_Project/Pages/product.html" id="nav_a"><i class="fa-solid fa-bag-shopping"></i>Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="nav_a"><i class="fa-solid fa-plus"></i>Add Product</a>
+                            <a class="nav-link" href="/Live_Class_Project/Pages/add_product.html" id="nav_a"><i class="fa-solid fa-plus"></i>Add Product</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" id="nav_a"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
@@ -30,7 +30,7 @@ export const navbar = (login="Login",signup="Sign UP") => {
                         </li>
                     </ul>
                     <form class="d-flex" role="search" id="search">
-                        <input class="form-control me-2" type="search" id="search_input" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" id="search_input" placeholder="Enter Category" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>

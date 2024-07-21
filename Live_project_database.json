@@ -1,22 +1,73 @@
 {
   "users": [
     {
-      "id": "2193",
+      "id": "5e48",
       "name": "Dhanji",
       "email": "dk@gmail.com",
-      "password": "dk"
-    },
-    {
-      "id": "5e66",
-      "name": "Dhanji",
-      "email": "dk1@gmail.com",
-      "password": "dk"
-    },
-    {
-      "id": "ddb5",
-      "name": "Dhanji",
-      "email": "dk2@gmail.com",
       "password": "DKRajput@12345"
+    }
+  ],
+  "products": [
+    {
+      "id": "0f23",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Nature",
+      "price": "300",
+      "category": "Flower"
+    },
+    {
+      "id": "109a",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Rose",
+      "price": "100",
+      "category": "Flower"
+    },
+    {
+      "id": "fd84",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Rose Gold",
+      "price": "200",
+      "category": "Flower"
+    },
+    {
+      "id": "abad",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Parrot",
+      "price": "1000",
+      "category": "Bird"
+    },
+    {
+      "id": "8f8a",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Kitten",
+      "price": "10000",
+      "category": "Animal"
+    }
+  ],
+  "cart": [
+    {
+      "id": "0f23",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Nature",
+      "price": "300",
+      "category": "Flower",
+      "qty": 4
+    },
+    {
+      "id": "109a",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Rose",
+      "price": "100",
+      "category": "Flower",
+      "qty": 3
+    },
+    {
+      "id": "fd84",
+      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
+      "title": "Rose Gold",
+      "price": "200",
+      "category": "Flower",
+      "qty": 2
     }
   ]
 }
