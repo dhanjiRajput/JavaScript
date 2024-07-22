@@ -18,20 +18,6 @@ export const User_API={
             body:JSON.stringify(data)
         })
     },
-
-    patch:async (data,id)=>{
-        let req=await fetch(`http://localhost:3000/users/${id}`,{
-            method:"PATCH",
-            headers:{"Content-Type":"application/json"},
-            body:JSON.stringify(data)
-        })
-    },
-
-    delete:async (id)=>{
-        let req=await fetch(`http://localhost:3000/users/${id}`,{
-            method:"DELETE",
-        })
-    },
 }
 
 export const products_API={
@@ -57,12 +43,6 @@ export const cart_API={
         return res;
     },
 
-    get1:async(id)=>{
-        let req=await fetch(`http://localhost:3000/cart/${id}`)
-        let res=await req.json();
-        return res;
-    },
-
     post:async(data)=>{
         let req=await fetch(`http://localhost:3000/cart`,{
             method:"POST",
@@ -76,6 +56,12 @@ export const cart_API={
             method:"PATCH",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(data)
+        })
+    },
+
+    delete:async (id)=>{
+        let req=await fetch(`http://localhost:3000/cart/${id}`,{
+            method:"DELETE",
         })
     },
 }

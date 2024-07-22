@@ -51,7 +51,7 @@
       "title": "Nature",
       "price": "300",
       "category": "Flower",
-      "qty": 4
+      "qty": 1
     },
     {
       "id": "109a",
@@ -59,7 +59,7 @@
       "title": "Rose",
       "price": "100",
       "category": "Flower",
-      "qty": 3
+      "qty": 1
     },
     {
       "id": "fd84",
@@ -67,7 +67,7 @@
       "title": "Rose Gold",
       "price": "200",
       "category": "Flower",
-      "qty": 2
+      "qty": 1
     }
   ]
 }

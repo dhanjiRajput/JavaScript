@@ -20,7 +20,7 @@ export const navbar = (login="Login",signup="Sign UP") => {
                             <a class="nav-link" href="/Live_Class_Project/Pages/add_product.html" id="nav_a"><i class="fa-solid fa-plus"></i>Add Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="nav_a"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                            <a class="nav-link" href="/Live_Class_Project/Pages/cart.html" id="nav_a"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/Live_Class_Project/Pages/login.html" id="login"><i class="fa-solid fa-user"></i>${login}</a>
