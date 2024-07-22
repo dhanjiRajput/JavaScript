@@ -2,6 +2,7 @@ let total=0;
 let sub_total=0;
 let g_total=0;
 import { cart_API } from "../Components/API_Method.js";
+import { createTag } from "../Components/helper.js";
 // Import Navbar From Componenet Folder
 import { navbar } from "../Components/navbar.js";
 document.getElementById("navbar").innerHTML =navbar();
@@ -144,4 +145,25 @@ document.getElementById("voucher").addEventListener("submit",(e)=>{
     let apply=(g_total*coupen)/100;
     total=g_total-apply;
     document.getElementById("total").innerHTML=total;
+    localStorage.setItem("total",total);
 });
+
+let city=localStorage.getItem("city");
+let tl=localStorage.getItem("total");
+document.getElementById("place_order").addEventListener("click",()=>{
+    
+    document.getElementById("modal").innerHTML="";
+    let name=createTag("h6",`Name : ${user.name}`);
+    let email=createTag("h6",`Email : ${user.email}`);
+    let address=createTag("h6",`Address : ${city}`);
+
+    let div1=document.createElement("div");
+    div1.append(name,email,address);
+
+    document.getElementById("modal").append(div1);
+})
+
+document.getElementById("close").addEventListener("click",()=>{
+    document.getElementById("list").innerHTML="";
+    alert("Ordered Successfully");
+})

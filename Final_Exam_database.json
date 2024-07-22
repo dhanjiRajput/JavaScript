@@ -7,5 +7,62 @@
       "password": "DKRajput@12345"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "13",
+      "name": "Aloo Keema",
+      "tags": [
+        "Keema",
+        "Potatoes"
+      ],
+      "image": "https://cdn.dummyjson.com/recipe-images/13.webp",
+      "rating": 4.5,
+      "mealType": [
+        "Lunch"
+      ],
+      "city": "Surat",
+      "price": 1025.18,
+      "category": "Main Course",
+      "qty": 2
+    },
+    {
+      "id": "12",
+      "name": "Chicken Karahi",
+      "tags": [
+        "Chicken",
+        "Karahi",
+        "Main course",
+        "Indian",
+        "Pakistani",
+        "Asian"
+      ],
+      "image": "https://cdn.dummyjson.com/recipe-images/12.webp",
+      "rating": 4.8,
+      "mealType": [
+        "Lunch",
+        "Dinner"
+      ],
+      "city": "Surat",
+      "price": 1188.18,
+      "category": "Main Course",
+      "qty": 1
+    },
+    {
+      "id": "10",
+      "name": "Shrimp Scampi Pasta",
+      "tags": [
+        "Pasta",
+        "Shrimp"
+      ],
+      "image": "https://cdn.dummyjson.com/recipe-images/10.webp",
+      "rating": 4.3,
+      "mealType": [
+        "Dinner"
+      ],
+      "city": "Surat",
+      "price": 1398.18,
+      "category": "Main Course",
+      "qty": 1
+    }
+  ]
 }
