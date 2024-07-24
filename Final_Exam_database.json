@@ -30,22 +30,17 @@
       "name": "Chicken Karahi",
       "tags": [
         "Chicken",
-        "Karahi",
-        "Main course",
-        "Indian",
-        "Pakistani",
-        "Asian"
+        "Karahi"
       ],
       "image": "https://cdn.dummyjson.com/recipe-images/12.webp",
       "rating": 4.8,
       "mealType": [
-        "Lunch",
-        "Dinner"
+        "Lunch"
       ],
       "city": "Surat",
       "price": 1188.18,
       "category": "Main Course",
-      "qty": 1
+      "qty": 2
     },
     {
       "id": "10",
