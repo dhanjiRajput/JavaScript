@@ -46,27 +46,19 @@
   ],
   "cart": [
     {
-      "id": "0f23",
-      "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
-      "title": "Nature",
-      "price": "300",
-      "category": "Flower",
-      "qty": 1
-    },
-    {
       "id": "109a",
       "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
       "title": "Rose",
       "price": "100",
       "category": "Flower",
-      "qty": 1
+      "qty": 3
     },
     {
-      "id": "fd84",
+      "id": "8f8a",
       "img": "https://images.unsplash.com/photo-1420593248178-d88870618ca0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D",
-      "title": "Rose Gold",
-      "price": "200",
-      "category": "Flower",
+      "title": "Kitten",
+      "price": "10000",
+      "category": "Animal",
       "qty": 1
     }
   ]

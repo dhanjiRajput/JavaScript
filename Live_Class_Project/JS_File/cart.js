@@ -43,7 +43,7 @@ const handleqty=(item,index,oper)=>{
         }
         cart_API.patch(d,item.id);
     }else{
-        if(get_cart[index].qty>0){
+        if(get_cart[index].qty>1){
             let d={
                 id:item.id,
                 img:item.img,
@@ -54,7 +54,7 @@ const handleqty=(item,index,oper)=>{
             }
             cart_API.patch(d,item.id);
         }else{
-            handledelete(index);
+            handledelete(item.id);
         }
     }
     mapper(get_cart);
@@ -99,7 +99,7 @@ const mapper=(data)=>{
         btn2.setAttribute("id","btnn");
         btn3.setAttribute("id","btnn");
         btn4.setAttribute("id","btnn");
-        btn4.addEventListener("click",()=>handledelete(index));
+        btn4.addEventListener("click",()=>handledelete(item.id));
         let td7=document.createElement("td");
         td7.append(btn4);
 
@@ -129,4 +129,10 @@ document.getElementById("voucher").addEventListener("submit",(e)=>{
     total=g_total-apply;
    
     document.getElementById("total").innerHTML=total;
+});
+
+
+document.getElementById("place_order").addEventListener("click",()=>{
+    document.getElementById("list").innerHTML="";
+    alert("Ordered Successfully");
 });
